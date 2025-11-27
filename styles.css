@@ -507,3 +507,10 @@ small {
         grid-row: 5/6;
     }
 }
+
+#plan-your-trip > h2,
+#testimonials > h2,
+#about-your-destination > h2 {
+    grid-column: 1 / -1;  
+    margin-bottom: 1.5rem;
+}
