@@ -526,4 +526,24 @@ small {
     left: 0;
     padding: .5rem;
     z-index: 1000;
+
+}
+
+.skip-links a {
+    position: absolute;
+    top: auto;
+    width: auto;
+    padding: 1rem;
+    left: -9999px;
+    background-color: var(--sunset-orange);
+    color: var(--deep-navy);
+    font: bold;
+    text-decoration: none;
+
+}
+
+.skip-links a:focus {
+    left: 1rem;
+    top: 1rem;
+    
 }

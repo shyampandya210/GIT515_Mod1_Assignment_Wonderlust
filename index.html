@@ -8,19 +8,18 @@
 
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
+
 <body>
 
- 
-    <nav class="skip-links">
-        <h2>Skip Links</h2>
-        <ul>
-            <li><a href="#main">Skip to Main Content</a></li>
-            <li><a href="#plan-your-trip">Skip to Plan Your Trip</a></li>
-            <li><a href="#testimonials">Skip to Testimonials</a></li>
-            <li><a href="#about-your-destination">Skip to About Your Destination</a></li>
-            <li><a href="#contact-us">Skip to Contact Us</a></li>
-        </ul>
-    </nav>
+
+    <div class="skip-link">
+        <a href="#main" class="skip">Skip to Main Content</a>
+        <a href="#plan-your-trip" class="skip">Skip to Plan Your Trip</a>
+        <a href="#testimonials" class="skip">Skip to Testimonials</a>
+        <a href="#about-your-destination" class="skip">Skip to About Your Destination</a>
+        <a href="#contact-us" class="skip">Skip to Contact Us</a>
+    </div>
+    
 
     <header>
         <h1>Destination Majorca</h1>
@@ -262,24 +261,24 @@
             <h2>Contact Us<span id="required">(*required)</span></h2>
             <form action="#" method="post">
                 <div>
-                    <label for="first-name">First Name<span>*</span></label>
-                    <input id="first-name" name="first-name" type="text" required>
+                    <label for="first-name">First Name<span aria-required="true">*</span></label>
+                    <input id="first-name" name="first-name" type="text" required aria-required="true">
                 </div>
                 <div>
-                    <label for="last-name">Last Name<span>*</span></label>
-                    <input id="last-name" name="last-name" type="text" required>
+                    <label for="last-name">Last Name<span aria-required="true">*</span></label>
+                    <input id="last-name" name="last-name" type="text" required aria-required="true">
                 </div>
                 <div>
-                    <label for="email">Email<span>*</span></label>
-                    <input id="email" name="email" type="email" required>
+                    <label for="email">Email<span aria-required="true">*</span></label>
+                    <input id="email" name="email" type="email" required aria-required="true">
                 </div>
                 <div>
-                    <label for="phone">Phone<span>*</span></label>
-                    <input id="phone" name="phone" type="tel" required>
+                    <label for="phone">Phone<span aria-required="true">*</span></label>
+                    <input id="phone" name="phone" type="tel" required aria-required="true">
                 </div>
 
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span aria-required="true">*</span></legend>
                     <div> 
                         <input type="radio" name="contact-method" id="contact-email" value="email" checked>
                         <label for="contact-email">Email</label>
@@ -295,7 +294,7 @@
                 </fieldset>
 
                 <fieldset id="destination">
-                    <legend>Destination<span>*</span></legend>
+                    <legend>Destination<span aria-required="true">*</span></legend>
                     <select id="select-destination" name="destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
@@ -311,8 +310,8 @@
                 </fieldset>
                 
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time" name="travel-time" required>
+                    <legend>Travel Time<span aria-required="true">*</span></legend>
+                    <select id="select-travel-time" name="travel-time" required aria-required="true">
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
